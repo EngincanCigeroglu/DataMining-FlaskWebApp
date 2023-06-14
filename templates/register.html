@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple registration form</title>
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      }
+      body, div, h1, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #666;
+      }
+      h1 {
+      padding: 10px 0;
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+      }
+      p {
+      font-size: 12px;
+      }
+      hr {
+      color: #a9a9a9;
+      opacity: 0.3;
+      }
+      .main-block {
+      max-width: 350px; 
+      min-height: 350px; 
+      padding: 10px 0;
+      margin: auto;
+      border-radius: 5px; 
+      border: solid 1px #ccc;
+      box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+      background: #ebebeb; 
+      }
+      form {
+      margin: 0 30px;
+      }
+      .account-type, .gender {
+      margin: 15px 0;
+      }
+      input[type=radio] {
+      display: none;
+      }
+      label#icon {
+      margin: 0;
+      border-radius: 5px 0 0 5px;
+      }
+      input[type=text] {
+      width: calc(100% - 57px);
+      height: 36px;
+      margin: 13px 0 0 -5px;
+      padding-left: 10px; 
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9; 
+      box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+      background: #fff; 
+      }
+      select {
+      width: calc(100% - 57px);
+      height: 36px;
+      margin: 13px 0 0 -5px;
+      padding-left: 10px; 
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9; 
+      box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+      background: #fff; 
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #83888b; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #e0201a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 style="color: #e0201a;">Netflix Registration</h1>
+      <form action="/">
+
+        <input type="text" name="name" id="name" placeholder="Name" required/>
+
+        <input type="text" name="surname" id="surname" placeholder="Surname" required/>
+
+          <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Angola">Angola</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Bermuda">Bermuda</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Canada">Canada</option>
+            <option value="Cayman Islands">Cayman Islands</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="East Germany">East Germany</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Germany">Germany</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Greece">Greece</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Iceland">Iceland</option>
+            <option value="India">India</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Iran">Iran</option>
+            <option value="Iraq">Iraq</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Japan">Japan</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Kazakhstan">Kazakhstan</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lebanon">Lebanon</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Malawi">Malawi</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Malta">Malta</option>
+            <option value="Mauritius">Mauritius</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Mongolia">Mongolia</option>
+            <option value="Montenegro">Montenegro</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Mozambique">Mozambique</option>
+            <option value="Namibia">Namibia</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="North Korea">North Korea</option>
+            <option value="Norway">Norway</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Panama">Panama</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Peru">Peru</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Romania">Romania</option>
+            <option value="Russia">Russia</option>
+            <option value="Samoa">Samoa</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Somalia">Somalia</option>
+            <option value="South Africa">South Africa</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Spain">Spain</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Syria">Syria</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Vatican City">Vatican City</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="West Germany">West Germany</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+          </select>
+
+          <select id="genre" name="genre">
+            <option value="Action & Adventure">Action & Adventure</option>
+            <option value="Anime Features">Anime Features</option>
+            <option value="Anime Series">Anime Series</option>
+            <option value="British TV Shows">British TV Shows</option>
+            <option value="Children & Family Movies">Children & Family Movies</option>
+            <option value="Classic & Cult TV">Classic & Cult TV</option>
+            <option value="Classic Movies">Classic Movies</option>
+            <option value="Comedies">Comedies</option>
+            <option value="Crime TV Shows">Crime TV Shows</option>
+            <option value="Cult Movies">Cult Movies</option>
+            <option value="Documentaries">Documentaries</option>
+            <option value="Docuseries">Docuseries</option>
+            <option value="Dramas">Dramas</option>
+            <option value="Faith & Spirituality">Faith & Spirituality</option>
+            <option value="Horror Movies">Horror Movies</option>
+            <option value="Independent Movies">Independent Movies</option>
+            <option value="International Movies">International Movies</option>
+            <option value="International TV Shows">International TV Shows</option>
+            <option value="Kids' TV">Kids' TV</option>
+            <option value="Korean TV Shows">Korean TV Shows</option>
+            <option value="LGBTQ Movies">LGBTQ Movies</option>
+            <option value="Movies">Movies</option>
+            <option value="Music & Musicals">Music & Musicals</option>
+            <option value="Reality TV">Reality TV</option>
+            <option value="Romantic Movies">Romantic Movies</option>
+            <option value="Romantic TV Shows">Romantic TV Shows</option>
+            <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+            <option value="Science & Nature TV">Science & Nature TV</option>
+            <option value="Spanish-Language TV Shows">Spanish-Language TV Shows</option>
+            <option value="Sports Movies">Sports Movies</option>
+            <option value="Stand-Up Comedy">Stand-Up Comedy</option>
+            <option value="Stand-Up Comedy & Talk Shows">Stand-Up Comedy & Talk Shows</option>
+            <option value="Teen TV Shows">Teen TV Shows</option>
+            <option value="Thrillers">Thrillers</option>
+            <option value="TV Action & Adventure">TV Action & Adventure</option>
+            <option value="TV Comedies">TV Comedies</option>
+            <option value="TV Dramas">TV Dramas</option>
+            <option value="TV Horror">TV Horror</option>
+            <option value="TV Mysteries">TV Mysteries</option>
+            <option value="TV Sci-Fi & Fantasy">TV Sci-Fi & Fantasy</option>
+            <option value="TV Shows">TV Shows</option>
+            <option value="TV Thrillers">TV Thrillers</option>
+          </select>
+
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
