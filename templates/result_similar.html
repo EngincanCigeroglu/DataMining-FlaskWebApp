@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Önerilen Filmler</title>
+  <style>
+    .movie-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .movie-card {
+      width: 200px;
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid #e0201a;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .movie-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .movie-description {
+      margin-bottom: 10px;
+    }
+    .movie-image {
+      width: 200px;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+    h1{
+        text-align: center;
+        color: #e0201a;
+    }
+  </style>
+  <script>
+    function goToFilmPage(url) {
+      window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <h1>Similar Shows</h1>
+  <div class="movie-container">
+    <div class="movie-card" onclick="goToFilmPage('{{recommendation[0].url}}')">
+      <p class="movie-title">{{recommendation[0].title}}</p>
+      <p class="movie-description">{{Show 1 - Category - Rating}}</p>
+    </div>
+    <div class="movie-card" onclick="goToFilmPage('{{recommendation[1].url}}')">
+      <p  class="movie-title">{{recommendation[1].title}}</p >
+      <p class="movie-description">{{Show 2 - Category - Rating}}</p>
+    </div>
+    <div class="movie-card" onclick="goToFilmPage('{{recommendation[2].url}}')">
+        <p  class="movie-title">{{recommendation[2].title}}</p >
+        <p class="movie-description">{{Show 3 - Category - Rating}}</p>
+    </div>
+    <div class="movie-card" onclick="goToFilmPage('{{recommendation[3].url}}')">
+        <p  class="movie-title">{{recommendation[3].title}}</p >
+        <p class="movie-description">{{Show 4 - Category - Rating}}</p>
+    </div>
+    <div class="movie-card" onclick="goToFilmPage('{{recommendation[4].url}}')">
+        <p  class="movie-title">{{recommendation[4].title}}</p >
+        <p class="movie-description">{{Show 5 - Category - Rating}}</p>
+    </div>
+  </div>
+</body>
+</html>
